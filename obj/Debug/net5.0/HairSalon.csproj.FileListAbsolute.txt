@@ -1,0 +1,8 @@
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.csprojAssemblyReference.cache
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.GeneratedMSBuildEditorConfig.editorconfig
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.AssemblyInfoInputs.cache
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.AssemblyInfo.cs
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.csproj.CoreCompileInputs.cache
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.MvcApplicationPartsAssemblyInfo.cache
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.RazorAssemblyInfo.cache
+C:\users\hubba\desktop\HairSalon.Solution\obj\Debug\net5.0\HairSalon.RazorAssemblyInfo.cs
