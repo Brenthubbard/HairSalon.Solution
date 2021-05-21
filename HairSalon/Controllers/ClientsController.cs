@@ -38,7 +38,7 @@ namespace HairSalon.Controllers
     public ActionResult Details(int id)
     {
       Restaurant thisClient = _db.Client.FirstOrDefault(clients => clients.ClientId == id);
-      return View(thisRestaurant);
+      return View(thisClient);
     }
     public ActionResult Edit(int id)
     {
@@ -56,7 +56,7 @@ namespace HairSalon.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Client Client)
+    public ActionResult Create(Client client)
     {
       _db.Client.Add(client);
       _db.SaveChanges();
