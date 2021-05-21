@@ -37,22 +37,17 @@ namespace HairSalon.Controllers
     }
     public ActionResult Details(int id)
     {
-      Restaurant thisClient = _db.Client.FirstOrDefault(clients => clients.ClientId == id);
+      Client thisClient = _db.Client.FirstOrDefault(clients => clients.ClientId == id);
       return View(thisClient);
     }
-    public ActionResult Edit(int id)
-    {
-      var thisClient = _db.Client.FirstOrDefault(client => clients.ClientId == id);
-      ViewBag.StylistId = new SelectList(_db.Stylist, "StylistId", "Name");
-      return View(thisClient);
-    }
+    
 
-    [HttpPost]
-    public ActionResult Edit(Client Client)
+      [HttpPost]
+    public ActionResult Edit(Client client)
     {
-      _db.Entry(client).State = EntityState.Modified;
-      _db.SaveChanges();
-      return RedirectToAction("Index");
+        _db.Entry(client).State = EntityState.Modified;
+        _db.SaveChanges();
+        return RedirectToAction("Index");
     }
 
     [HttpPost]
@@ -67,6 +62,13 @@ namespace HairSalon.Controllers
       ViewBag.StylistId = new SelectList(_db.Stylist, "StylisteId", "Name");
       return View();
     }
+// public ActionResult Create()
+//     {
+//       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+//       return View();
+//     }
+
+
   }
 }
 
