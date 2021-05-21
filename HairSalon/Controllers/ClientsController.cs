@@ -3,22 +3,22 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using WeekThreeTemplate.Models;
+using HairSalon.Models;
 
-namespace WeekThreeTemplate.Controllers
+namespace HairSalon.Controllers
 {
-  public class TemplateItemsController : Controller
+  public class ClientsController : Controller
   {
-    private readonly WeekThreeTemplateContext _db;
+    private readonly HairSalonContext _db;
 
-    public TemplateItemsController(WeekThreeTemplateContext db)
+    public ClientsController(HairSalonContext db)
     {
       _db = db;
     }
 
     public ActionResult Index()
     {
-      List<TemplateItem> model = _db.TemplateItems.Include(templateItem => templateItem.TemplateCategory).ToList();
+      List<Client> model = _db.Clients.Include(client => client.Stylist).ToList();
       return View(model);
     }
   }

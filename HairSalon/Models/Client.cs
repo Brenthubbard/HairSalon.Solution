@@ -1,16 +1,14 @@
 using System.Collections.Generic;
 
-namespace WeekThreeTemplate.Models
+namespace HairSalon.Models
 {
-  public class TemplateCategory
+  public class Client
   {
-    public TemplateCategory()
-    {
-      this.TemplateItems = new HashSet<TemplateItem>();
-    }
+   
 
-    public int TemplateCategoryId { get; set; }
-    public string SomeProperty { get; set; }
-    public virtual ICollection<TemplateItem> TemplateItems { get; set; }
+    public int ClientId { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public string StylistId { get; set; }
   }
 }

@@ -1,9 +1,11 @@
-namespace WeekThreeTemplate.Models
+using System.Collections.Generic;
+
+namespace HairSalon.Models
 {
-  public class TemplateItem
+  public class Stylist
   {
-    public int TemplateItemId { get; set; }
-    public int TemplateCategoryId { get; set; }
-    public virtual TemplateCategory TemplateCategory { get; set; }
+    public int Name { get; set; }
+    public int StylistId { get; set; }
+    public virtual Client Clients { get; set; }
   }
 }
