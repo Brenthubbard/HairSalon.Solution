@@ -21,5 +21,6 @@ namespace HairSalon.Controllers
       List<Client> model = _db.Clients.Include(client => client.Stylist).ToList();
       return View(model);
     }
+    
   }
 }
