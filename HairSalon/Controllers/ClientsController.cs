@@ -57,11 +57,7 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
-    // public ActionResult Create()
-    // {
-    //   ViewBag.StylistId = new SelectList(_db.Stylist, "StylisteId", "Name");
-    //   return View();
-    // }
+    
 public ActionResult Create()
     {
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
