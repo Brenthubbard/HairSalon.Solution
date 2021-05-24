@@ -32,13 +32,13 @@ CREATE TABLE `client` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `stylist`
+-- Table structure for table `stylists`
 --
 
-DROP TABLE IF EXISTS `stylist`;
+DROP TABLE IF EXISTS `stylists`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `stylist` (
+CREATE TABLE `stylists` (
   `StylistId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   `ClientId` int DEFAULT '0',
@@ -55,4 +55,4 @@ CREATE TABLE `stylist` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-21 17:49:47
+-- Dump completed on 2021-05-21 18:10:50
